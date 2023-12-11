@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: MC-Fly-Away
+Upstream-Contact: Dom Rodriguez (shymega) <shymega+mc-fly-away@shymega.org.uk>
+Source: https://github.com/shymega/mc-fly-away
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...
