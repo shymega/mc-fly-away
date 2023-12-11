@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2023 Dom Rodriguez (shymega) <shymega+mc-fly-away@shymega.org.uk>
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+[package]
+name = "mc-fly-away"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+byteorder = "1.5.0"
+bytes = { version = "1.5.0", features = ["serde"] }
+config = { version = "0.13.4", default-features = false, features = ["json", "toml"] }
+env_logger = "0.10.1"
+log = { version = "0.4.20", features = ["serde"] }
+ozelot = "0.9.0"
+thiserror = "1.0.50"
+tokio = { version = "1.35.0", features = ["full"] }
