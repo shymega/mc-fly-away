@@ -31,12 +31,7 @@
         devShells.default = devenv.lib.mkShell {
           inherit inputs pkgs;
           modules = [
-            ({pkgs, config, ... }: {
-              languages = {
-                rust.enable = true;
-                nix.enable = true;
-              };
-            })
+            (import ./devenv.nix)
           ];
         };
       })
