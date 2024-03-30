@@ -5,6 +5,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    devenv.url = "github:cachix/devenv";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = {
       url = "github:edolstra/flake-compat";
@@ -15,8 +16,9 @@
     { self
     , nixpkgs
     , flake-utils
+    , devenv
     , ...
-    }:
+    }@inputs:
     flake-utils.lib.eachDefaultSystem
       (system:
       let
@@ -26,16 +28,17 @@
         packages.mc-fly-away = pkgs.callPackage ./mc-fly-away.nix { };
         packages.default = self.outputs.packages.${system}.mc-fly-away;
 
-        devShells.default = self.packages.${system}.default.overrideAttrs (super: {
-          nativeBuildInputs = with pkgs;
-            super.nativeBuildInputs
-            ++ [
-              cargo-edit
-              clippy
-              rustfmt
-            ];
-          RUST_SRC_PATH = "${pkgs.rustPlatform.rustLibSrc}";
-        });
+        devShells.default = devenv.lib.mkShell {
+          inherit inputs pkgs;
+          modules = [
+            ({pkgs, config, ... }: {
+              languages = {
+                rust.enable = true;
+                nix.enable = true;
+              };
+            })
+          ];
+        };
       })
     // {
       overlays.default = final: prev: {
