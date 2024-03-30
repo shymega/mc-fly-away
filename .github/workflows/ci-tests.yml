@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2023 Dom Rodriguez (shymega) <shymega+mc-fly-away@shymega.org.uk>
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+---
+name: CI tests (meta)
+
+on:
+  push:
+    paths: ["src/**", "*.lock", "devenv.nix"]
+  pull_request:
+    paths: ["src/**", "*.lock", "devenv.nix"]
+  workflow_dispatch:
+
+jobs:
+  test-nix:
+    uses: ./.github/workflows/ci-tests-nix.yml
+    secrets: inherit
