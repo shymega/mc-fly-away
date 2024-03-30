@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2023 Dom Rodriguez (shymega) <shymega+mc-fly-away@shymega.org.uk>
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+name: REUSE Compliance workflow
+
+on:
+  pull_request:
+
+jobs:
+  test-reuse-compliance:
+    name: Test the commit for REUSE Compliance.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.2
+      - uses: fsfe/reuse-action@v3
