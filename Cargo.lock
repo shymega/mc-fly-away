@@ -190,9 +190,9 @@ dependencies = [
 
 [[package]]
 name = "aws-sdk-ecs"
-version = "1.19.0"
+version = "1.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c6b731339093437dd27f15de744b647648f5ea1f22d16b7fd3f0b678b4e83e18"
+checksum = "c6bfb34220036abcc70909d2d2b9bb675e78cba2777a11bb832f67f8896ef35a"
 dependencies = [
  "aws-credential-types",
  "aws-runtime",
@@ -863,9 +863,9 @@ dependencies = [
 
 [[package]]
 name = "gcloud-sdk"
-version = "0.24.4"
+version = "0.24.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c98040a916925b0d44e46bd1e1989dc3a745584452f3698f3ca14330b2acc501"
+checksum = "b576eba42739c388264de61bd3fb96c186071266116b960fb2d84e594be8175f"
 dependencies = [
  "async-trait",
  "chrono",
