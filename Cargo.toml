@@ -24,6 +24,6 @@ log = { version = "0.4.21", features = ["serde"] }
 ozelot = "0.9.0"
 thiserror = "1.0.59"
 tokio = { version = "1.37.0", features = ["full"] }
-aws-sdk-ecs = { version = "1.22.0", optional = true }
+aws-sdk-ecs = { version = "1.23.0", optional = true }
 azure-sdk-rust = { version = "0.1.2", optional = true } # TODO: Find *maintained* alternative.
-gcloud-sdk = { version = "0.24.5", optional = true }
+gcloud-sdk = { version = "0.24.6", optional = true }
