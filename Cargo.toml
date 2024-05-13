@@ -15,15 +15,15 @@ azure = ["azure-sdk-rust"] # TODO: Find *maintained* alternative. Disabled by de
 gcp = ["gcloud-sdk"]
 
 [dependencies]
-anyhow = "1.0.82"
+anyhow = "1.0.83"
 byteorder = "1.5.0"
 bytes = { version = "1.6.0", features = ["serde"] }
 config = { version = "0.14.0", default-features = false, features = ["json", "toml"] }
 env_logger = "0.11.3"
 log = { version = "0.4.21", features = ["serde"] }
 ozelot = "0.9.0"
-thiserror = "1.0.59"
+thiserror = "1.0.60"
 tokio = { version = "1.37.0", features = ["full"] }
-aws-sdk-ecs = { version = "1.23.0", optional = true }
+aws-sdk-ecs = { version = "1.25.0", optional = true }
 azure-sdk-rust = { version = "0.1.2", optional = true } # TODO: Find *maintained* alternative.
 gcloud-sdk = { version = "0.24.6", optional = true }
