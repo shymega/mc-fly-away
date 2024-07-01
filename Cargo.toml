@@ -20,7 +20,7 @@ byteorder = "1.5.0"
 bytes = { version = "1.6.0", features = ["serde"] }
 config = { version = "0.14.0", default-features = false, features = ["json", "toml"] }
 env_logger = "0.11.3"
-log = { version = "0.4.21", features = ["serde"] }
+log = { version = "0.4.22", features = ["serde"] }
 ozelot = "0.9.0"
 thiserror = "1.0.61"
 tokio = { version = "1.38.0", features = ["full"] }
