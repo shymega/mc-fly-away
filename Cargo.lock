@@ -196,9 +196,9 @@ dependencies = [
 
 [[package]]
 name = "aws-sdk-ecs"
-version = "1.37.0"
+version = "1.38.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8ea694d7331974527336c5532a6751a569814e1790b1be1cf6deae936bddf801"
+checksum = "dfcf9586e9d23bfb73f2bc8dff2d84ac6aa05318a9a63dc2694fe6e46accefa4"
 dependencies = [
  "aws-credential-types",
  "aws-runtime",
@@ -502,9 +502,9 @@ checksum = "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
 
 [[package]]
 name = "bytes"
-version = "1.6.1"
+version = "1.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a12916984aab3fa6e39d655a33e09c0071eb36d6ab3aea5c2d78551f1df6d952"
+checksum = "8318a53db07bb3f8dca91a600466bdb3f2eaadeedfdbcf02e1accbad9271ba50"
 dependencies = [
  "serde",
 ]
@@ -857,9 +857,9 @@ checksum = "8f5f3913fa0bfe7ee1fd8248b6b9f42a5af4b9d65ec2dd2c3c26132b950ecfc2"
 
 [[package]]
 name = "gcloud-sdk"
-version = "0.25.3"
+version = "0.25.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "898e349fb0fabc16892de7858e5650b70a8044edeee13469cb2f7649040bf3c2"
+checksum = "d62b5b62214a879bebfd282b47e9a85e9265885405cc776f41d3e9fd4e802778"
 dependencies = [
  "async-trait",
  "bytes",
